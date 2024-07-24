@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hotbarrefill",
+  "version": "${version}",
+  "name": "Hotbar Refill",
+  "description": "Hotbar Refill is a mod for helping you to refill your hotbar.",
+  "authors": [
+    "Seyit"
+  ],
+  "contact": {
+    "repo": "https://github.com/IseyitThe/HotbarRefill"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hotbarrefill/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.seyit.hotbarrefill.HotbarRefill"
+    ],
+    "modmenu": [
+      "me.seyit.hotbarrefill.Config"
+    ]
+  },
+  "mixins": [
+    "hotbarrefill.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.20.1"
+  },
+  "dependencies": {
+    "yet_another_config_lib_v3": "*"
+  }
+}
